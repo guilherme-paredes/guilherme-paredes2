@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="alakaxan/src"/>
+	<classpathentry kind="src" path="Mês 02 - Fevereiro/10.02.2026"/>
+	<classpathentry kind="src" path="Mês 02 - Fevereiro/12.02.2026/Scanner"/>
+	<classpathentry kind="src" path="Mês 02 - Fevereiro/24.02.2025/Exercícios de revisão"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
