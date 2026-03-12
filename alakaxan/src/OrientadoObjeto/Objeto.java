@@ -1,6 +1,6 @@
 package OrientadoObjeto;
 
-public class Objetos {
+public class Objeto {
 	
 	String nome;
 	String descricao;
