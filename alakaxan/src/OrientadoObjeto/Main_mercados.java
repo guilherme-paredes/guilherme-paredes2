@@ -1,7 +1,7 @@
 package OrientadoObjeto;
 
 public class Main_mercados {
-	
+
 	public static void main(String[] args) {
 		Mercado uniBlu = new Mercado();
 		uniBlu.nome = "BluMercado";
@@ -25,12 +25,35 @@ public class Main_mercados {
 		uniFlo.valorLaranjas = 5.8;
 		
 		
-		double VendaMaca;
-		double VendaLaranja;
+		uniBlu.VendaMaca();
+		uniJo.VendaMaca();
+		uniFlo.VendaMaca();
 		
-		vendaMaca();
-		vendaLaranja();
+		uniBlu.VendaLaranja();
+		uniJo.VendaLaranja();
+		uniFlo.VendaLaranja();
 		
+		Mercado[] listaMercados = {uniBlu, uniJo, uniFlo}; 
+		
+		Mercado maisCaroM = listaMercados[0];
+	    for (int i = 0; i < listaMercados.length; i++) {
+	        if (listaMercados[i].VendaMaca() > maisCaroM.VendaMaca()) {
+	            maisCaroM = listaMercados[i];
+	        }
+	    }
+	    
+	    Mercado menosCaroL = listaMercados[0];
+	    for (int i = 0; i < listaMercados.length; i++) {
+	        if (listaMercados[i].VendaLaranja() < menosCaroL.VendaLaranja()) {
+	            menosCaroL = listaMercados[i];
+	        }}
 	}
+	    
+	    
+	 public static double laranjaOuMaca(Mercado[]listaMecados) {
+			double receitaTotal = uniBlu.VendaMaca() + uniJo.VendaMaca() + uniFlo.VendaMaca();
+			return 0;
+	    
 	
+}
 }
