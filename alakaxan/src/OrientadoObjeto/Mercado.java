@@ -10,15 +10,11 @@ public class Mercado {
 	
 	
 	public double VendaMaca() {
-		double valorTotal = macasVendidasPorAno * valorMacas;
-		
-		return vendaMaca = valorTotal;
-		
+		return macasVendidasPorAno * valorMacas;
+		 	
 	}
 	public double VendaLaranja() {
-		double valorTotal = laranjasVendidasPorAno * valorLaranjas;
-		
-		return vendaLaranja = valorTotal;
+		return laranjasVendidasPorAno * valorLaranjas;
 		
 	}
 	public double laranjaOuMaca() {

@@ -3,26 +3,27 @@ package OrientadoObjeto;
 public class Main_mercados {
 
 	public static void main(String[] args) {
+		
 		Mercado uniBlu = new Mercado();
 		uniBlu.nome = "BluMercado";
-		uniBlu.macasVendidasPorAno = 10;
-		uniBlu.valorMacas = 2.5;
-		uniBlu.laranjasVendidasPorAno = 15;
-		uniBlu.valorLaranjas = 4.2;
+		uniBlu.macasVendidasPorAno = 1;
+		uniBlu.valorMacas = 1.5;
+		uniBlu.laranjasVendidasPorAno = 2;
+		uniBlu.valorLaranjas = 2.5;
 		
 		Mercado uniJo = new Mercado();
 		uniJo.nome = "JoMercado";
-		uniJo.macasVendidasPorAno = 12;
-		uniJo.valorMacas = 1.2;
-		uniJo.laranjasVendidasPorAno = 13;
-		uniJo.valorLaranjas = 4.6;
+		uniJo.macasVendidasPorAno = 2;
+		uniJo.valorMacas = 2.5;
+		uniJo.laranjasVendidasPorAno = 3;
+		uniJo.valorLaranjas = 3.5;
 		
 		Mercado uniFlo = new Mercado();
 		uniFlo.nome = "FloMercados";
-		uniFlo.macasVendidasPorAno = 25;
-		uniFlo.valorMacas = 7.3;
-		uniFlo.laranjasVendidasPorAno = 15;
-		uniFlo.valorLaranjas = 5.8;
+		uniFlo.macasVendidasPorAno = 4;
+		uniFlo.valorMacas = 4.5;
+		uniFlo.laranjasVendidasPorAno = 5;
+		uniFlo.valorLaranjas = 5.5;
 		
 		
 		uniBlu.VendaMaca();
@@ -35,10 +36,14 @@ public class Main_mercados {
 		
 		Mercado[] listaMercados = {uniBlu, uniJo, uniFlo}; 
 		
+		double receitaTotalM = 0;
+		double receitaTotalL = 0;
+		
 		Mercado maisCaroM = listaMercados[0];
 	    for (int i = 0; i < listaMercados.length; i++) {
-	        if (listaMercados[i].VendaMaca() > maisCaroM.VendaMaca()) {
+	        if (listaMercados[i].VendaMaca() > maisCaroM.VendaLaranja()) {
 	            maisCaroM = listaMercados[i];
+	             receitaTotalM = receitaTotalM + listaMercados[i].VendaMaca();
 	        }
 	    }
 	    
@@ -46,14 +51,15 @@ public class Main_mercados {
 	    for (int i = 0; i < listaMercados.length; i++) {
 	        if (listaMercados[i].VendaLaranja() < menosCaroL.VendaLaranja()) {
 	            menosCaroL = listaMercados[i];
+	            receitaTotalL = receitaTotalL + listaMercados[i].VendaLaranja();
 	        }}
+	    
+	System.out.println(maisCaroM.nome + ", "+ menosCaroL.nome);
+	System.out.println(receitaTotalM +", "+ receitaTotalL);
 	}
 	    
 	    
-	 public static double laranjaOuMaca(Mercado[]listaMecados) {
-			double receitaTotal = uniBlu.VendaMaca() + uniJo.VendaMaca() + uniFlo.VendaMaca();
-			return 0;
+	 
 	    
 	
-}
 }
