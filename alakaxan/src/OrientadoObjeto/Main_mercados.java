@@ -37,7 +37,7 @@ public class Main_mercados {
 		Mercado[] listaMercados = {uniBlu, uniJo, uniFlo}; 
 		
 		double receitaTotalM = 0;
-		double receitaTotalL = 0;
+		double receitaTotalL= 1;
 		
 		Mercado maisCaroM = listaMercados[0];
 	    for (int i = 0; i < listaMercados.length; i++) {
@@ -51,7 +51,7 @@ public class Main_mercados {
 	    for (int i = 0; i < listaMercados.length; i++) {
 	        if (listaMercados[i].VendaLaranja() < menosCaroL.VendaLaranja()) {
 	            menosCaroL = listaMercados[i];
-	            receitaTotalL = receitaTotalL + listaMercados[i].VendaLaranja();
+	            receitaTotalL = listaMercados[i].VendaLaranja();
 	        }}
 	    
 	System.out.println(maisCaroM.nome + ", "+ menosCaroL.nome);
