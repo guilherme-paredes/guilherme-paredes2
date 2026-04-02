@@ -35,7 +35,7 @@ public class ReceitaObjeto {
 		}
 	}
 	public void setcpf(String cpf) {
-		if(cpf == null || cpf.isBlank()){
+		if(cpf == null || cpf.isBlank() || cpf.length()!= 14){
 			System.out.println("Erro CPF invalido.");
 		}else {
 		this.cpf = cpf;
@@ -43,7 +43,7 @@ public class ReceitaObjeto {
 	
 	}
 	public void setuf(String uf) {
-		if(uf == null || uf.isBlank()){
+		if(uf == null || uf.isBlank() || uf.length() != 2){
 			System.out.println("Erro UF invalido.");
 		}else {
 		this.uf = uf;
