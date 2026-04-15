@@ -15,7 +15,7 @@ public class VelCarroMain {
 		System.out.println("Resultado " + c1.getVelocidade());
 		velP = velP + 8;
 		System.out.println("velp " + velP);
-		c1.reduzir(velP);
+		c1.reduzir(60);
 		System.out.println("Resultado " + c1.getVelocidade());
 	}
 }
