@@ -30,6 +30,18 @@ public class Flor {
         setNome(nome);
     }
 
+    public String getFlor() {
+        return flor;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
     @Override
     public String toString() {
         return "Flor{" + "flor='" + flor + '\'' + ", valor=" + valor + ", nome='" + nome + '\'' + '}';
