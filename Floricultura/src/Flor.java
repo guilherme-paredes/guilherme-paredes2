@@ -10,7 +10,7 @@ public class Flor {
         this.flor = flor;
     }
 
-    public void setValor(Double valor) {
+    public void setValor(double valor) {
         if (valor < 0) {
             throw new IllegalArgumentException("O valor não pode ser negativo");
         }
