@@ -14,6 +14,6 @@ public class FloriculturaMain {
 
 
 
-System.out.println(itajai.obterListaCompradores(Flor.getNome));
+System.out.println(itajai.obterListaCompradores("Jeff"));
     }
 }
