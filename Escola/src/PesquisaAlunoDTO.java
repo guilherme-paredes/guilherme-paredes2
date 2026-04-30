@@ -31,14 +31,17 @@ public class PesquisaAlunoDTO {
     }
 
     public String getvNome() {
+
         return vNome;
     }
 
     public int getvIdade() {
+
         return vIdade;
     }
 
     public double getvMedia() {
+
         return vMedia;
     }
 }
